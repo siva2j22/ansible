@@ -1,0 +1,13 @@
+- name: varailbles from playarea
+  hosts: localhost
+  become: yes
+  vars: 
+    course: "DevOps"
+    Trainer: "siva"
+    Duration: "140"
+  tasks:
+  - name: check vaiable
+    ansible.builtin.debug:
+    msg : "hi i am learing {{course}},trainer is {{Trainer}} and duration is {{Duration}}"
+
+    
