@@ -1,6 +1,6 @@
 - name: varailbles from playarea
   hosts: localhost
-  become: yes
+  #become: yes
   vars: 
     course: "DevOps"
     Trainer: "siva"
@@ -11,5 +11,5 @@
       course: "AWS & Devops"
     ansible.builtin.debug:
     msg : "hi i am learing {{course}},trainer is {{Trainer}} and duration is {{Duration}}"
-
+ 
     
