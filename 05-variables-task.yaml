@@ -1,4 +1,4 @@
-- name: varailbles from playarea
+- name: varailbles from play level
   hosts: localhost
   #become: yes
   vars: 
