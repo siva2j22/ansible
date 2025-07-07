@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: priny person
+    ansible.builtin.debug:
+      msg: "Hello {{item}}" # item as default value in ansible for refarance
+    loop:
+    - Ramesh
+    - monkey
+    - sivaji  
