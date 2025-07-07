@@ -1,6 +1,6 @@
 #list of play books
 - name: play-1
-  hosts: localhosts
+  hosts: localhost
   become: yes
   tasks:
   - name: play-1 and task-1
