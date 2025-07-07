@@ -1,12 +1,10 @@
 - name: varailbles from play level
   hosts: localhost
   #become: yes
-  vars: 
-    course: "DevOps"
-    Trainer: "siva"
-    Duration: "140"
+  vars_files:
+  
   tasks:
-    name: check vaiable
+  name: check vaiable
     vars:
       course: "AWS & Devops"
     ansible.builtin.debug:
