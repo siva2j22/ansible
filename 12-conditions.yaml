@@ -1,5 +1,6 @@
 - name: condition checking
   hosts: localhost
+  become: yes
   tasks:
   - name: check roboshop user exists or not
     ansible.builtin.command: id roboshop
@@ -13,3 +14,5 @@
   - name print exit status
     ansible.builtin.debug:
       msg: "user name is {{user.rc}}"
+
+  
