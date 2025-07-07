@@ -1,8 +1,8 @@
 - name: varailbles from playarea
   hosts: localhost
   tasks:
-  - name: check vaiable
-    ansible.builtin.debug:
-    msg : "hi i am learing {{course}},trainer is {{Trainer}} and duration is {{Duration}}"
+   name: check vaiable
+   ansible.builtin.debug:
+      msg : "hi i am learing {{course}},trainer is {{Trainer}} and duration is {{Duration}}"
 
     
