@@ -6,7 +6,7 @@
     Trainer: "siva"
     Duration: "140"
   tasks:
-  - name: check vaiable
+   name: check vaiable
     vars:
       course: "AWS & Devops"
     ansible.builtin.debug:
