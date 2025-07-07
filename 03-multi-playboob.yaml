@@ -1,0 +1,12 @@
+#list of play books
+- name: play-1
+  hosts: localhosts
+  become: yes
+  tasks:
+  - name : play-1 and task-1
+    ansible.builtln.debug:
+      msg: "hello from play-1 and task-1"
+  - name : play-1 and task-2
+    ansible.builtln.debug:
+      msg: "hello from play-1 and task-2"
+      
