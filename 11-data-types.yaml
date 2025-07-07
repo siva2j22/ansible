@@ -1,0 +1,28 @@
+- name: checking data type
+  hosts: localhost
+  vars: 
+    NAME: siva
+    skills:
+    - DevOps
+    - AWS
+    EXPERIANCE:
+      DEVOPS: 7
+      AWS: 5
+      Docker: 5
+    Trainer: true
+  tasks:
+  - name: print key value pair
+    ansible.builtin.debug:
+      msg: "name : {{name}}"  
+
+  - name: print list
+    ansible.builtin.debug:
+      msg: "skills: {{skills}}"
+
+  - name: print map
+    ansible.builtin.debug:
+      msg: "skills: {{EXPERIANCE}}"
+  
+  - name: print map
+    ansible.builtin.debug:
+      msg: "skills: {{Trainer}}"
