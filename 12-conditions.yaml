@@ -11,8 +11,11 @@
     ansible.builtin.debug:
       msg: "user name is {{user}}"
   
-  - name print exit status
+  - name: print exit status
     ansible.builtin.debug:
       msg: "user name is {{user.rc}}"
 
-  
+  - name: create user
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0
